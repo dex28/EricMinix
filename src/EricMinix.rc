@@ -1,0 +1,646 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EricMinix.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EricMinix.ico"
+IDR_CFIMGTYPE           ICON    DISCARDABLE     "res\\EricMinixDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_DISK         BITMAP  DISCARDABLE     "res\\bitmapDisk.bmp"
+IDB_BITMAP_FILE         BITMAP  DISCARDABLE     "res\\bitmapFile.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\SplashIPTC.bmp"
+IDB_BITMAP_FILE_BIG     BITMAP  DISCARDABLE     "res\\bitmapFileBig.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_SYSTREE_RESCAN
+    BUTTON      ID_SYSTREE_ADDDISK
+    SEPARATOR
+    BUTTON      ID_DISK_EJECT
+    BUTTON      ID_DISK_ADDPARTITION
+    BUTTON      ID_COPY_TO_IMAGE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Tree"
+    BEGIN
+        MENUITEM "&Add Disk Image",             ID_SYSTREE_ADDDISK
+        MENUITEM "&Rescan Disks",               ID_SYSTREE_RESCAN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Disk"
+    BEGIN
+        MENUITEM "Read Onl&y",                  ID_DISK_READ_ONLY
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide Disk",                  ID_DISK_HIDE
+        MENUITEM "&Eject",                      ID_DISK_EJECT
+        MENUITEM "Add &Partition",              ID_DISK_ADDPARTITION
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy to Image",              ID_DISK_COPYTOIMAGE
+        MENUITEM "Restore &Image",              ID_DISK_RESTOREIMAGE
+    END
+    POPUP "&Filesystem"
+    BEGIN
+        MENUITEM "&FSCK",                       ID_FILESYSTEM_FSCK
+        MENUITEM "Forma&t",                     ID_FILESYSTEM_FORMAT
+        MENUITEM "&Resize",                     ID_FILESYSTEM_RESIZE
+        MENUITEM "&Delete",                     ID_FILESYSTEM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Move &Up",                    ID_FILESYSTEM_MOVEUP
+        MENUITEM "Move D&own",                  ID_FILESYSTEM_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy to Image",              ID_FILESYSTEM_COPYTOIMAGE
+        MENUITEM "Restore &Image",              ID_FILESYSTEM_RESTOREIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "List &Program Units",         ID_FILESYSTEM_LIST_P_HEADERS
+    END
+    POPUP "D&irectory"
+    BEGIN
+        MENUITEM "&Copy to...",                 ID_DIRECTORY_COPYTO
+        MENUITEM "&Merge...",                   ID_DIRECTORY_MERGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename",                     ID_DIRECTORY_RENAME
+        MENUITEM "&Delete",                     ID_DIRECTORY_DELETE
+        MENUITEM "&Properties",                 ID_DIRECTORY_PROPERTIES
+    END
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Copy to...",                 ID_FILE_COPYTO
+        MENUITEM SEPARATOR
+        MENUITEM "&View",                       ID_FILE_VIEW
+        MENUITEM "&Rename",                     ID_FILE_RENAME
+        MENUITEM "&Delete",                     ID_FILE_DELETE
+        MENUITEM "&Properties",                 ID_FILE_PROPERTIES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Large Icons",                ID_VIEW_LARGEICON
+        MENUITEM "Small &Icons",                ID_VIEW_SMALLICON
+        MENUITEM "&Details",                    ID_VIEW_DETAILS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About EricMinix...",         ID_APP_ABOUT
+    END
+END
+
+IDM_MNU_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP "SysTree"
+    BEGIN
+        MENUITEM "&Add Disk Image",             ID_SYSTREE_ADDDISK
+        MENUITEM "&Rescan Disks",               ID_SYSTREE_RESCAN
+    END
+    POPUP "Disk"
+    BEGIN
+        MENUITEM "Read Onl&y",                  ID_DISK_READ_ONLY
+        MENUITEM SEPARATOR
+        MENUITEM "&Hide Disk",                  ID_DISK_HIDE
+        MENUITEM "&Eject",                      ID_DISK_EJECT
+        MENUITEM "&Add Partition",              ID_DISK_ADDPARTITION
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy to Image",              ID_DISK_COPYTOIMAGE
+        MENUITEM "Restore &Image",              ID_DISK_RESTOREIMAGE
+    END
+    POPUP "Filesystem"
+    BEGIN
+        MENUITEM "&FSCK",                       ID_FILESYSTEM_FSCK
+        MENUITEM "Forma&t",                     ID_FILESYSTEM_FORMAT
+        MENUITEM "R&esize",                     ID_FILESYSTEM_RESIZE
+        MENUITEM "&Delete",                     ID_FILESYSTEM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Move &Up",                    ID_FILESYSTEM_MOVEUP
+        MENUITEM "Move D&own",                  ID_FILESYSTEM_MOVEDOWN
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy to Image",              ID_FILESYSTEM_COPYTOIMAGE
+        MENUITEM "Restore &Image",              ID_FILESYSTEM_RESTOREIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "List &Program Units",         ID_FILESYSTEM_LIST_P_HEADERS
+    END
+    POPUP "Directory"
+    BEGIN
+        MENUITEM "&Copy to...",                 ID_DIRECTORY_COPYTO
+        MENUITEM "&Merge...",                   ID_DIRECTORY_MERGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename",                     ID_DIRECTORY_RENAME
+        MENUITEM "&Delete",                     ID_DIRECTORY_DELETE
+        MENUITEM "&Properties",                 ID_DIRECTORY_PROPERTIES
+    END
+    POPUP "File"
+    BEGIN
+        MENUITEM "&Copy to...",                 ID_FILE_COPYTO
+        MENUITEM SEPARATOR
+        MENUITEM "&View",                       ID_FILE_VIEW
+        MENUITEM "&Rename",                     ID_FILE_RENAME
+        MENUITEM "&Delete",                     ID_FILE_DELETE
+        MENUITEM "&Properties",                 ID_FILE_PROPERTIES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EDIT_LABEL,          VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Eric-MINIX Disk Utility"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Eric-MINIX Version 0.8",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 by IPTC Tech. Comm AB",IDC_STATIC,40,
+                    25,160,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ERICMINIX_FORM DIALOGEX 0, 0, 451, 293
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | WS_TABSTOP,141,81,146,75,
+                    WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_REPORT,31,76,79,40,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+IDR_MAINFRAME DIALOG DISCARDABLE  0, 0, 62, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Read Only",IDC_CHECK_READ_ONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,3,49,10
+END
+
+IDD_ADD_PARTITION_DIALOG DIALOG DISCARDABLE  0, 0, 239, 108
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Partition"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter desired file system size or select to use all available space",
+                    IDC_STATIC,20,16,200,8
+    GROUPBOX        "File System Size:",IDC_STATIC,29,34,182,38
+    EDITTEXT        IDC_FS_SIZE,45,49,64,12,ES_AUTOHSCROLL
+    CONTROL         "Use all available space",IDC_CHECK_USE_ALL_SPACE,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,115,50,89,10
+    DEFPUSHBUTTON   "OK",IDOK,64,87,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,87,50,14
+END
+
+IDD_FILE_PROPERTIES_DIALOG DIALOG DISCARDABLE  0, 0, 197, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "File:",IDC_FILE_TYPE,5,7,185,8
+    EDITTEXT        IDC_FILE_NAME,10,20,175,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,5,40,185,190
+    LTEXT           "Size:",IDC_STATIC,30,50,45,8
+    LTEXT           "45.1MB (3434 Bytes)",IDC_FILE_SIZE,85,50,95,8
+    LTEXT           "Sie on Disk:",IDC_STATIC,30,65,39,8
+    LTEXT           "34.1kB (3445 Bytes)",IDC_SIZE_ON_DISK,85,65,100,8
+    LTEXT           "INODE:",IDC_STATIC,30,80,45,8
+    LTEXT           "1",IDC_INODE_INDEX,85,80,90,8
+    LTEXT           "Links#:",IDC_STATIC,30,95,45,8
+    LTEXT           "1",IDC_NLINKS,85,95,95,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,110,175,1
+    LTEXT           "Access Time:",IDC_STATIC,29,120,44,8
+    EDITTEXT        IDC_ACCESS_TIME,85,118,74,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,135,174,1
+    LTEXT           "User:",IDC_STATIC,30,150,18,8
+    CONTROL         "R",IDC_CHECK_USER_R,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,150,21,10
+    CONTROL         "W",IDC_CHECK_USER_W,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,150,23,10
+    CONTROL         "X",IDC_CHECK_USER_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,150,21,10
+    LTEXT           "Group:",IDC_STATIC,30,160,22,8
+    CONTROL         "R",IDC_CHECK_GROUP_R,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,160,21,10
+    CONTROL         "W",IDC_CHECK_GROUP_W,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,160,23,10
+    CONTROL         "X",IDC_CHECK_GROUP_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,160,21,10
+    LTEXT           "Other:",IDC_STATIC,30,170,20,8
+    CONTROL         "R",IDC_CHECK_OTHER_R,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,170,23,10
+    CONTROL         "W",IDC_CHECK_OTHER_W,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,170,23,10
+    CONTROL         "X",IDC_CHECK_OTHER_X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,130,170,21,10
+    LTEXT           "Owner:",IDC_STATIC,15,190,24,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,185,174,1
+    LTEXT           "UID:",IDC_STATIC,33,204,16,8
+    EDITTEXT        IDC_USER_ID,55,202,35,12,ES_AUTOHSCROLL
+    LTEXT           "GID:",IDC_STATIC,107,204,16,8
+    EDITTEXT        IDC_GROUP_ID,127,202,35,12,ES_AUTOHSCROLL
+    LTEXT           "Mode:",IDC_STATIC,15,140,21,8
+    DEFPUSHBUTTON   "OK",IDOK,15,245,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,71,245,50,14
+    PUSHBUTTON      "View",IDVIEW,125,245,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,8,0,1
+ PRODUCTVERSION 0,8,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "IPTC Tech. Comm. AB\0"
+            VALUE "FileDescription", "EricMinix MFC Application\0"
+            VALUE "FileVersion", "0, 8, 0, 1\0"
+            VALUE "InternalName", "EricMinix\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004 by M.B.K, IPTC Tech. Comm. AB\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EricMinix.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MINIX NIU-CF Disk Utility (Ericsson MD110)\0"
+            VALUE "ProductVersion", "0, 8, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ERICMINIX_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_ADD_PARTITION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_FILE_PROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        VERTGUIDE, 29
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+        HORZGUIDE, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "NIU-CF Disk Utility\n\ncfimg\nNIU Disk Image Files (*.cfimg)\n.cfimg\nEricMinix.Document\nNIU Disk Image Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "NIU-CF Disk Utility"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+    ID_INDICATOR_BUSY       "O.K."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SYSTREE_ADDDISK      "Add binary disk image to the tree\nLoad binary disk image"
+    ID_SYSTREE_RESCAN       "Rescan for disks changes\nRescan for disk changes"
+    ID_DISK_HIDE            "Exclude disk from the tree\nExclude disk from the tree"
+    ID_DISK_ADDPARTITION    "Add new disk partition (new file system)\n Add new disk partition"
+    ID_FILESYSTEM_FORMAT    "Format file system\nFormat file system"
+    ID_FILESYSTEM_RESIZE    "Resize file system\nResize file system"
+    ID_FILESYSTEM_DELETE    "Delete file system\nDelete file system"
+    ID_DIRECTORY_RENAME     "Rename directory\nRename directory"
+    ID_DIRECTORY_DELETE     "Delete directory (recurse subdirectories)\nDelete directory"
+    ID_DIRECTORY_PROPERTIES "View and change directory attributes, owner information etc.\nView and change directory attributes, owner information etc."
+    ID_DIRECTORY_COPYTO     "Copy directory tree to host folder\nCopy directory tree to host folder"
+    ID_DIRECTORY_MERGE      "Merge host folder into directory tree\nMerge host folder into directory tree"
+    ID_FILE_RENAME          "Rename file\nRename file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_DELETE          "Delete file\nDelete file"
+    ID_FILE_PROPERTIES      "View and change file attributes, owner information etc.\nView and change file attributes, owner information etc."
+    ID_FILE_COPYTO          "Copy file to host folder\nCopy file to host folder"
+    ID_FILE_VIEW            "Read-only preview file contents\nRead-only preview file contents"
+    ID_DISK_COPYTOIMAGE     "Copy disk to binary image file\nCopy disk to binary image file"
+    ID_DISK_RESTOREIMAGE    "Restore disk from a binary image file\nRestore disk from a binary image file"
+    ID_FILESYSTEM_COPYTOIMAGE 
+                            "Copy file system to a binary image file\nCopy file system to a binary image file"
+    ID_FILESYSTEM_RESTOREIMAGE 
+                            "Restore file system from a binary image file\nRestore file system from a binary image file"
+    ID_FILESYSTEM_MOVEUP    "Move up file system in partition list\nMove up file system in partition list"
+    ID_FILESYSTEM_MOVEDOWN  "Move down file system in partition list\nMove down file system in partition list"
+    ID_FILESYSTEM_FSCK      "Check file system for errors\nCheck file system for errors"
+    ID_START_AUTOSCAN       "Start automatic disk scan functionality"
+    ID_DISK_EJECT           "Eject media from disk drive\nEject media from disk drive"
+    ID_DISK_READ_ONLY       "Read Only or R/W toggle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COPY_TO_IMAGE        "Copy disk or filesystem to binary image\nCopy disk or filesystem to binary image"
+    ID_SYSTREE_ADD_REMOVE_DISKS 
+                            "Add / Remove Disks (internal; posted from autoscan thread)"
+    ID_FILESYSTEM_LIST_P_HEADERS 
+                            "List program unit code and data headers\nList program unit code and data headers"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "View File List as small icons"
+    ID_VIEW_LARGEICON       "View File List as larg icons"
+    ID_VIEW_DETAILS         "View File List in details"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EricMinix.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
